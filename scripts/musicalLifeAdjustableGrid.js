@@ -447,16 +447,9 @@ var recursiveAnim = function() {
 }
 			
 function loadAudioScript() {
-	$.getScript('riffwave.js', function(xhr) {
+	$.getScript('/scripts/riffwave.js', function(xhr) {
 		console.log("Generating Audio...");
-		try {
-			createScale();
-	    } catch(err) {
-			console.log("Error " + err);
-			console.log("trying again...");
-	        eval(xhr);
-			createScale();
-	    }
+		createScale();
 	});
 }
 
