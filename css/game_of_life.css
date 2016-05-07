@@ -1,0 +1,112 @@
+body { 
+	background:#333 url('../resources/px_by_Gre3g.png');
+	color:#222;
+	font-family:'Open Sans', sans-serif;
+	font-size:16px; 
+}
+
+ul, li {
+	list-style-type: circle;
+	text-align:left;
+	margin-bottom:10px;
+	font-size:14px;
+	padding-left:5%;
+	padding-right:5%;
+}
+
+#wrapper {
+	width:96%;
+	max-width:920px;
+	margin:auto;
+	padding:2%;
+}
+
+#controlBox {
+	text-align:center;
+	padding:5px;
+}
+
+#container {
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	
+	background:#dddddd url('../resources/subtle_surface.png');
+	
+	border:solid 3px #666666;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	border-radius:3px;
+	
+	padding-bottom:30px;
+	text-align:center;
+}
+
+#infoBox{
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	padding-bottom:30px;
+	
+	background:#dddddd url('../resources/subtle_surface.png');
+	
+	border:solid 3px #666666;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	border-radius:3px;
+	
+	text-align:left;
+}
+
+input[type="button"] {
+	color:#fff;
+	font-size:16px;
+	background:#666666;
+	border:0px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-khtml-border-radius:2px;
+	border-radius:2px;
+	padding: 5px 10px;
+}
+
+input[type="button"]:hover {
+	background:#CCCCCC;
+	color:#333333;
+	border:1px solid #666666;
+	padding:4px 9px;
+}
+
+/* emphasised element */
+#emphasis {
+	background:#336699;
+}
+#emphasis:hover{
+	background:#003366;
+	color:#ffffff;
+}
+
+/* Media Queries */
+/* make single column layout for narrow displays */
+@media screen and (max-width:480px) {
+	#infoBox{
+		display:block;
+	}
+
+	#container{
+		display:block;
+		width:98%;
+	}
+	
+	#wrapper{
+		width:100%;
+	}
+	
+	#infoBox{
+		width:96%;
+	}
+}
