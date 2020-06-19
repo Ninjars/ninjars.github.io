@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Road to Sheep Island | Jez</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.72.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Road to Sheep Island" />
+<meta property="og:description" content="Building on my procedurally-generated island mesh, the next step was to see about bringing some life to the land." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jeremystevens.net/projects/road-to-sheep-island/" />
+<meta property="article:published_time" content="2018-05-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-05-21T00:00:00+00:00" />
+<meta itemprop="name" content="Road to Sheep Island">
+<meta itemprop="description" content="Building on my procedurally-generated island mesh, the next step was to see about bringing some life to the land.">
+<meta itemprop="datePublished" content="2018-05-21T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-05-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="701">
+
+
+
+<meta itemprop="keywords" content="game,procedural,island,unity," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Road to Sheep Island"/>
+<meta name="twitter:description" content="Building on my procedurally-generated island mesh, the next step was to see about bringing some life to the land."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('http://jeremystevens.net/images/island-shaded-wireframe.jpg');">
+    
+    <div class="pb3-m pb6-l ">
+    
+      
+<nav class="pv3 ph3 ph4-ns bg-black-60" role="navigation">
+
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Jez
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+<a href="https://twitter.com/NinjaJez" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/jezstevens/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/Ninjars" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://jeremystevens.net/projects/road-to-sheep-island/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://jeremystevens.net/projects/road-to-sheep-island/&amp;text=Road%20to%20Sheep%20Island" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://jeremystevens.net/projects/road-to-sheep-island/&amp;title=Road%20to%20Sheep%20Island" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Road to Sheep Island</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-05-21T00:00:00Z">May 21, 2018</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Building on my procedurally-generated island mesh, the next step was to see about bringing some life to the land.</p>
+<p>I had a vision of an interlocking techno-organic ecosystem, with a bunch of different animal and plant types, but my inspiration dried up after implementing sheep flocks.</p>
+<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;I wonder how hard it is going to be to add a navigation mesh to a procedurally-generated island&quot;<br>Answer: not very! Awesome tooling, <a href="https://twitter.com/unity3d?ref_src=twsrc%5Etfw">@unity3d</a>! <a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://t.co/mvRls4au8Y">pic.twitter.com/mvRls4au8Y</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/988080388496150528?ref_src=twsrc%5Etfw">April 22, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I continue to be impressed by how <a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> makes life easy. In a few scattered hours today I&#39;ve added a nav mesh and collision to my procedurally generated island and borrowed a pannable, zoomable camera from a community post.<br><br>Next up: navigating agents, I guess? <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://t.co/yTIrZf61cg">pic.twitter.com/yTIrZf61cg</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/988183022091587584?ref_src=twsrc%5Etfw">April 22, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Spent the evening experimenting with <a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a>&#39;s runtime nav mesh generation feature. Worked out how to generate nav meshes for different agent types; here there are two overlain where one agent can&#39;t go up as steep slopes as the other! <a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://t.co/sy2lGV7eNR">pic.twitter.com/sy2lGV7eNR</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/988515326215278593?ref_src=twsrc%5Etfw">April 23, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The next step! First a visualisation of the nodes that reference the underlying voronoi centers structure, and then my first autonomous agents, currently tethered to said nodes (green line) and wandering to random locations nearby (red line) <a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://twitter.com/hashtag/navMesh?src=hash&amp;ref_src=twsrc%5Etfw">#navMesh</a> <a href="https://t.co/2c5vdBJKiu">pic.twitter.com/2c5vdBJKiu</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/991799372366209024?ref_src=twsrc%5Etfw">May 2, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sat in the park making little cubes pretend to be vaguely sheep-like :D<a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://t.co/PscwkKAOQs">pic.twitter.com/PscwkKAOQs</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/992757746448715777?ref_src=twsrc%5Etfw">May 5, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Amusingly, I&#39;ve already found a black sheep - for whatever reason, this lil guy wants to hang out in the sky. Just... floating there. On its own. Not sure if I should be all &quot;poor lil guy&quot; or &quot;it&#39;s ok dude, just chill&quot;<a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://t.co/IdVRQeP6Mk">pic.twitter.com/IdVRQeP6Mk</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/992782437901062144?ref_src=twsrc%5Etfw">May 5, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/IlsNKSgnNY">pic.twitter.com/IlsNKSgnNY</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/993239442436624385?ref_src=twsrc%5Etfw">May 6, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Implemented a new flock behaviour: transitioning between unthreatened and defensive :D Note how they get a speed and acceleration boost when threatened ^_^<a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://twitter.com/hashtag/circleTheWagons?src=hash&amp;ref_src=twsrc%5Etfw">#circleTheWagons</a> <a href="https://t.co/V8KV9F1eVg">pic.twitter.com/V8KV9F1eVg</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/993240022517239808?ref_src=twsrc%5Etfw">May 6, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Suspicious sheep stare down the suspicious, threatening cube :D<a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://t.co/hKsE6c9Hvl">pic.twitter.com/hKsE6c9Hvl</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/995051739639410688?ref_src=twsrc%5Etfw">May 11, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It took a couple of hours, but I worked out how to get my flocks to scatter when threatened too much! Not bad for being tired and having a cold! :D<a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://twitter.com/hashtag/sheepHerding?src=hash&amp;ref_src=twsrc%5Etfw">#sheepHerding</a> <a href="https://t.co/Fi5cnExIdl">pic.twitter.com/Fi5cnExIdl</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/995095383469682690?ref_src=twsrc%5Etfw">May 12, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Spent the day fooling around refactoring the world generator to use a builder-style pattern, to make it easier to change the parameters. I can now add features to apply trivially! See some examples from my current simple function chain below.<a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://t.co/0Y7awRh7Wm">pic.twitter.com/0Y7awRh7Wm</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/995392485185806336?ref_src=twsrc%5Etfw">May 12, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fooling around with additional terrain deformation ideas. How about craters? Big ones, small ones, some the size of your head! Mash &#39;em together, erode them down a little bit...<a href="https://twitter.com/hashtag/unity3D?src=hash&amp;ref_src=twsrc%5Etfw">#unity3D</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://t.co/NGACiMaVws">pic.twitter.com/NGACiMaVws</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/995731292791758849?ref_src=twsrc%5Etfw">May 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My first attempt to stick feet on my sheep using the power of <a href="https://twitter.com/hashtag/code?src=hash&amp;ref_src=twsrc%5Etfw">#code</a> didn&#39;t go quite to plan...<a href="https://twitter.com/hashtag/Unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#Unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://twitter.com/hashtag/thatWasntSupposedToHappen?src=hash&amp;ref_src=twsrc%5Etfw">#thatWasntSupposedToHappen</a><a href="https://twitter.com/hashtag/sideprojectMonday?src=hash&amp;ref_src=twsrc%5Etfw">#sideprojectMonday</a> <a href="https://t.co/H4o5jIzmcr">pic.twitter.com/H4o5jIzmcr</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/996115192143597568?ref_src=twsrc%5Etfw">May 14, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">There we go! The noble sheep stares out across the desolate mountainscape, proudly perched on planar paws.<a href="https://twitter.com/hashtag/Unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#Unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://twitter.com/hashtag/sideprojectMonday?src=hash&amp;ref_src=twsrc%5Etfw">#sideprojectMonday</a> <a href="https://t.co/4dQsicvtwS">pic.twitter.com/4dQsicvtwS</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/996115593924349952?ref_src=twsrc%5Etfw">May 14, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Ok, so maybe the offset is in the wrong coordinate reference frame, but this little skating guy has style B)<a href="https://twitter.com/hashtag/Unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#Unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://twitter.com/hashtag/sideprojectMonday?src=hash&amp;ref_src=twsrc%5Etfw">#sideprojectMonday</a> <a href="https://t.co/CVZ3SQUmIq">pic.twitter.com/CVZ3SQUmIq</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/996116068455403521?ref_src=twsrc%5Etfw">May 14, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Phew, it scales! there&#39;s 200 lil skating sheep on this island, doing their little scoots with their feet finding the terrain :) <br><br>Calling it an evening there; my next challenge is gonna be making them take steps!<a href="https://twitter.com/hashtag/Unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#Unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://twitter.com/hashtag/sideprojectMonday?src=hash&amp;ref_src=twsrc%5Etfw">#sideprojectMonday</a> <a href="https://t.co/hSyPXWQEdC">pic.twitter.com/hSyPXWQEdC</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/996116848876900356?ref_src=twsrc%5Etfw">May 14, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Turns out when the sheep get et, their feet remain.<br><br>Forever.<br><br>Reminding you of what you did.<br><br>...<br><br>brb, patching my guilt out.<a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://twitter.com/hashtag/TheIslandRemembers?src=hash&amp;ref_src=twsrc%5Etfw">#TheIslandRemembers</a> <a href="https://t.co/pYqEO6Tv4W">pic.twitter.com/pYqEO6Tv4W</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/996427255353049088?ref_src=twsrc%5Etfw">May 15, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Feet 2.0<br><br>D&#39;aww, lookit them go!<a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://t.co/r0NX0ShkcS">pic.twitter.com/r0NX0ShkcS</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/997872177251782657?ref_src=twsrc%5Etfw">May 19, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Once upon a time someone told me that programming was all about numbers. So I figured I should add some to my island.<br><br>Then I got a bit carried away.<br><br>I&#39;m telling myself it&#39;s all for a good cause, or something.<a href="https://twitter.com/hashtag/sideprojectMonday?src=hash&amp;ref_src=twsrc%5Etfw">#sideprojectMonday</a> <a href="https://twitter.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://twitter.com/hashtag/gameDev?src=hash&amp;ref_src=twsrc%5Etfw">#gameDev</a> <a href="https://t.co/qe4It0VHab">pic.twitter.com/qe4It0VHab</a></p>&mdash; Jez (@NinjaJez) <a href="https://twitter.com/NinjaJez/status/998657060542787584?ref_src=twsrc%5Etfw">May 21, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p><ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/game" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">game</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/procedural" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">procedural</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/island" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">island</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/unity" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">unity</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/projects/island-mesh/">Island Mesh</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects/early-world-generator/">Early World Gen Tweets</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-dark-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://jeremystevens.net/" >
+    &copy;  Jez 2020 
+  </a>
+    <div>
+
+
+
+
+<a href="https://twitter.com/NinjaJez" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/jezstevens/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/Ninjars" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
