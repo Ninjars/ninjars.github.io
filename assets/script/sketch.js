@@ -8,9 +8,12 @@ let boidSize = 10;
 let boidMaxSpeed = 0.8;
 let boidMaxForce = 0.01;
 
+let repelFactor = 1;
+let attractFactor = 0.5;
+
 let desiredSeparation = 25.0;
 let lineRange = 75.0;
-let mouseInfluenceRange = 150.0;
+let mouseInfluenceRange = 200.0;
 let mouseInfluenceSqr = mouseInfluenceRange * mouseInfluenceRange;
 
 function setup() {
@@ -104,8 +107,8 @@ class Boid {
         let separationSteer = this.getSeparationForce(boids, distances);
         let mouseSteer = this.getMouseAttractionForce(mousePosition);
 
-        this.applyForce(separationSteer);
-        this.applyForce(mouseSteer);
+        this.applyForce(separationSteer.mult(repelFactor));
+        this.applyForce(mouseSteer.mult(attractFactor));
     }
 
     getSeparationForce(boids, distances) {
