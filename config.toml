@@ -36,4 +36,5 @@ enableRobotsTXT = true
   featured_image = "/images/sheep-stare.jpg"
   recent_posts_number = 4
   mainSections=["posts","projects"]
+  custom_css = ["/css/styles.css"]
   env = "production"

@@ -1,0 +1,9 @@
+{{ $p5 := resources.Get "script/p5.min.js" }}
+{{ if (.Site.IsServer) }}
+    {{ $p5 = resources.Get "script/p5.js" }}
+{{ end }}
+<script src="{{ $p5.Permalink }}" type="text/javascript"></script>
+{{ $script := resources.Get "script/sketch.js" }}
+<script src="{{ $script.Permalink }}" type="text/javascript"></script>
+
+<div id="sketch-holder" class="fl w-100" > </div>
