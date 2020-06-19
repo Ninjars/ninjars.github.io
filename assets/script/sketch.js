@@ -22,7 +22,7 @@ function setup() {
     canvas.parent('sketch-holder');
 
     for (let i = 0; i < boidCount; i++) {
-        boids[i] = new Boid(random(width), random(height));
+        boids[i] = new Boid(i, random(width), random(height));
     }
 }
 
@@ -40,7 +40,8 @@ function draw() {
 }
 
 class Boid {
-    constructor(x, y) {
+    constructor(id, x, y) {
+        this.id = id;
         this.acceleration = createVector(0, 0);
         this.velocity = p5.Vector.random2D();
         this.position = createVector(x, y);
@@ -62,7 +63,7 @@ class Boid {
 
     // Draw boid and lines to nearby boids
     render(mousePosition, boids, distances) {
-        for (let i = 0; i < distances.length; i++) {
+        for (let i = this.id; i < distances.length; i++) {
             let distance = distances[i] / lineRange;
             if (distance > 0 && distance <= 1) {
                 stroke(255, (1 - distance) * 255);
