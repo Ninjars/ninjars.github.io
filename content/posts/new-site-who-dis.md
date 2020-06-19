@@ -1,10 +1,12 @@
 ---
 title: "New Site Who Dis"
+featured_image: "/images/jez-eyes.jpg"
+omit_header_text: true
 date: 2020-06-19
 ---
-Welcome to Jez's site 2.0!
+Welcome to jeremystevens.net 2.0!
 <!--more-->
-I've long had a rather terrible little website, but I've finally found the time and motivation and tooling to have a stab at making something a little bit more professional and useful.
+For many moons this domain has hosted a rather terrible little website, but finally I've found the time and motivation and tooling to have a stab at making something a little bit more professional and useful.
 
 This is a Hugo-powered blog-thing that hopefully I will be able to use to keep track of my various projects. I've historically consigned my development ideas to Twitter posts, but it becomes rather laborious to go back over those to get a feel for the development of ideas. I've done some initial aggregation of tweets to seed my projects pages with some history, and with a bit of luck I'll be able to use this space to not only catalog past work but to also serve as a place to write about ongoing and future projects.
 

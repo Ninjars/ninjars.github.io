@@ -1,4 +1,8 @@
+{{ if .Params.omit_header_text }}
+<nav class="pv3 ph3 ph4-ns bg-black-60" role="navigation">
+{{ else }}
 <nav class="pv3 ph3 ph4-ns" role="navigation">
+{{ end }}
   <div class="flex-l justify-between items-center center">
     <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white no-underline white-90 dib">
       {{ with .Site.Params.site_logo }}

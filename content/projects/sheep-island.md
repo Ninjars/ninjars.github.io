@@ -2,6 +2,7 @@
 title: "Sheep Island"
 date: 2019-12-18
 featured_image: "/images/sheep-isle.jpg"
+omit_header_text: true
 tags: [game, island, unity]
 ---
 Sheep Island was a little project I made as a Christmas gift for a close friend. It's the first self-generated project since I became a developer where I've actually managed to get to a point where I could call it "finished"!

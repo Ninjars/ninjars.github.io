@@ -2,6 +2,7 @@
 title: "Hex Grid Worlds"
 date: 2020-06-12
 featured_image: "/images/hex-world-platform.jpg"
+omit_header_text: true
 tags: [game, turret, hexagon, unity]
 ---
 Repurposing hexagon grid board core logic from Hextopia with an aim to building the foundations of a new game.
