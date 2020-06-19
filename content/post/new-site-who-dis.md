@@ -1,7 +1,6 @@
 ---
 title: "New Site Who Dis"
 date: 2020-06-19
-draft: true
 ---
 Welcome to Jez's site 2.0!
 <!--more-->

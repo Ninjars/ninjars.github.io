@@ -2,7 +2,6 @@
 title: "Machine Learning"
 date: 2019-04-25
 tags: [hackday, unity]
-draft: true
 ---
 In 2019 I had the good fortune to be able to use some company hack days to see about learning how various flavours of reinforcement learning work. 
 <!--more-->

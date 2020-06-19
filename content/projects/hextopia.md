@@ -2,7 +2,6 @@
 title: "Hextopia"
 date: 2019-09-30
 tags: [game, hexagon, unity]
-draft: true
 ---
 Turn-based strategy game inspired by playing too much Polytopia and wondering "how hard could it be?"
 <!--more-->

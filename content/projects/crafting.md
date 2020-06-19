@@ -1,8 +1,7 @@
 ---
 title: "Crafting Tweets"
 date: 2020-05-07
-tags: [hardware] 
-draft: true
+tags: [hardware]
 ---
 A little collection of things involving hardware rather than purely software.
 <!--more-->

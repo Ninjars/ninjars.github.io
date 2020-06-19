@@ -2,7 +2,6 @@
 title: "Spider Bots"
 date: 2019-10-21
 tags: [unity, hackday]
-draft: true
 ---
 A silly hack-day inverse kinematics exploration that I kinda got carried away with.
 <!--more-->

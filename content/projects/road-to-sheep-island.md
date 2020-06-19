@@ -3,7 +3,6 @@ title: "Road to Sheep Island"
 date: 2018-05-21
 featured_image: "/images/island-shaded-wireframe.jpg"
 tags: [game, procedural, island, unity]
-draft: true
 ---
 Building on my procedurally-generated island mesh, the next step was to see about bringing some life to the land.
 <!--more-->

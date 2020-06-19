@@ -3,7 +3,6 @@ title: About
 description: What's all this then?
 type: page
 menu: main
-
 ---
 
 ## Who?

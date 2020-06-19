@@ -3,7 +3,6 @@ title: "Gun Turret"
 date: 2020-03-11
 featured_image: "/images/turrets-firing.jpg"
 tags: [game, turret, unity]
-draft: true
 ---
 Borne of a desire to see if I could wrangle Unity's then brand-new ECS library into some dramatic large-scale interactive battle scene I set out to see about building a gun turret.
 <!--more-->

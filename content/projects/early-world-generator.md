@@ -2,7 +2,6 @@
 title: "Early World Gen Tweets"
 date: 2018-02-21
 tags: [voronoi, island, procedural]
-draft: true
 ---
 Early experiments learning Voronoi and Delaunay algorithms with the excellent resources provided on <https://www.redblobgames.com/>.
 <!--more-->

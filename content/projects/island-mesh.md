@@ -2,7 +2,6 @@
 title: "Island Mesh"
 date: 2018-04-09
 tags: [voronoi, procedural, island, unity]
-draft: true
 ---
 Building on Voronoi and Delaunay grids, I then sought to work out how to turn that into geometry in Unity.
 <!--more-->

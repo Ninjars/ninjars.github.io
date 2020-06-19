@@ -2,7 +2,6 @@
 title: "Voxel World"
 date: 2019-12-19
 tags: [procedural, voxel]
-draft: true
 ---
 Experimenting with a Voxel engine Unity asset to see if it would satisfy an idea I had for a deformable-terrain turret game. 
 <!--more-->
