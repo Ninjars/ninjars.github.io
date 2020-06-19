@@ -1,6 +1,6 @@
 baseURL = "http://jeremystevens.net/"
 languageCode = "en-us"
-title = "Home"
+title = "Jez"
 publishDir = "public"
 theme = "ananke"
 
