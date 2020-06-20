@@ -1,12 +1,10 @@
-// https://p5js.org/examples/hello-p5-flocking.html
-let height = 400;
-let backgroundValue = 51;
+// inpired and derived from https://p5js.org/examples/hello-p5-flocking.html
 
 let boids = [];
 let boidCount = 100;
 let boidSize = 10;
-let boidMaxSpeed = 0.8;
-let boidMaxForce = 0.01;
+let boidMaxSpeed = 1.2;
+let boidMaxForce = 0.015;
 
 let repelFactor = 1;
 let attractFactor = 0.5;
@@ -30,7 +28,7 @@ function windowResized() {
 }
 
 function draw() {
-    background(48, 53, 60);
+    background(48, 53, 65);
     
     let mousePosition = createVector(mouseX, mouseY);
     for (let i = 0; i < boids.length; i++) {
@@ -80,7 +78,7 @@ class Boid {
             line(this.position.x, this.position.y, mousePosition.x, mousePosition.y);
         }
 
-        fill(127, 127);
+        fill(110, 150, 170, 127);
         stroke(200);
         ellipse(this.position.x, this.position.y, boidSize, boidSize);
     }
