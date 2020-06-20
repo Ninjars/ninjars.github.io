@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jez</title>
-    <link>http://jeremystevens.net/posts/</link>
+    <link>https://jeremystevens.net/posts/</link>
     <description>Recent content in Posts on Jez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://jeremystevens.net/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeremystevens.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>New Site Who Dis</title>
-      <link>http://jeremystevens.net/posts/new-site-who-dis/</link>
+      <link>https://jeremystevens.net/posts/new-site-who-dis/</link>
       <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/posts/new-site-who-dis/</guid>
+      <guid>https://jeremystevens.net/posts/new-site-who-dis/</guid>
       <description>&lt;p&gt;Welcome to jeremystevens.net 2.0!&lt;/p&gt;</description>
     </item>
     

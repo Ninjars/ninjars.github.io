@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jez&#39;s Homepage on Jez</title>
-    <link>http://jeremystevens.net/</link>
+    <link>https://jeremystevens.net/</link>
     <description>Recent content in Jez&#39;s Homepage on Jez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://jeremystevens.net/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeremystevens.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>New Site Who Dis</title>
-      <link>http://jeremystevens.net/posts/new-site-who-dis/</link>
+      <link>https://jeremystevens.net/posts/new-site-who-dis/</link>
       <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/posts/new-site-who-dis/</guid>
+      <guid>https://jeremystevens.net/posts/new-site-who-dis/</guid>
       <description>&lt;p&gt;Welcome to jeremystevens.net 2.0!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hex Grid Worlds</title>
-      <link>http://jeremystevens.net/projects/hex-world/</link>
+      <link>https://jeremystevens.net/projects/hex-world/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/hex-world/</guid>
+      <guid>https://jeremystevens.net/projects/hex-world/</guid>
       <description>&lt;p&gt;Repurposing hexagon grid board core logic from Hextopia with an aim to building the foundations of a new game.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Crafting Tweets</title>
-      <link>http://jeremystevens.net/projects/crafting/</link>
+      <link>https://jeremystevens.net/projects/crafting/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/crafting/</guid>
+      <guid>https://jeremystevens.net/projects/crafting/</guid>
       <description>&lt;p&gt;A little collection of things involving hardware rather than purely software.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Gun Turret</title>
-      <link>http://jeremystevens.net/projects/gun-turret/</link>
+      <link>https://jeremystevens.net/projects/gun-turret/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/gun-turret/</guid>
+      <guid>https://jeremystevens.net/projects/gun-turret/</guid>
       <description>&lt;p&gt;Borne of a desire to see if I could wrangle Unity&amp;rsquo;s then brand-new ECS library into some dramatic large-scale interactive battle scene I set out to see about building a gun turret.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Voxel World</title>
-      <link>http://jeremystevens.net/projects/voxel-world/</link>
+      <link>https://jeremystevens.net/projects/voxel-world/</link>
       <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/voxel-world/</guid>
+      <guid>https://jeremystevens.net/projects/voxel-world/</guid>
       <description>&lt;p&gt;Experimenting with a Voxel engine Unity asset to see if it would satisfy an idea I had for a deformable-terrain turret game.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sheep Island</title>
-      <link>http://jeremystevens.net/projects/sheep-island/</link>
+      <link>https://jeremystevens.net/projects/sheep-island/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/sheep-island/</guid>
+      <guid>https://jeremystevens.net/projects/sheep-island/</guid>
       <description>&lt;p&gt;Sheep Island was a little project I made as a Christmas gift for a close friend. It&amp;rsquo;s the first self-generated project since I became a developer where I&amp;rsquo;ve actually managed to get to a point where I could call it &amp;ldquo;finished&amp;rdquo;!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Spider Bots</title>
-      <link>http://jeremystevens.net/projects/spider-bots/</link>
+      <link>https://jeremystevens.net/projects/spider-bots/</link>
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/spider-bots/</guid>
+      <guid>https://jeremystevens.net/projects/spider-bots/</guid>
       <description>&lt;p&gt;A silly hack-day inverse kinematics exploration that I kinda got carried away with.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hextopia</title>
-      <link>http://jeremystevens.net/projects/hextopia/</link>
+      <link>https://jeremystevens.net/projects/hextopia/</link>
       <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/hextopia/</guid>
+      <guid>https://jeremystevens.net/projects/hextopia/</guid>
       <description>&lt;p&gt;Turn-based strategy game inspired by playing too much Polytopia and wondering &amp;ldquo;how hard could it be?&amp;rdquo;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>http://jeremystevens.net/projects/machine-learning-experiments/</link>
+      <link>https://jeremystevens.net/projects/machine-learning-experiments/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/machine-learning-experiments/</guid>
+      <guid>https://jeremystevens.net/projects/machine-learning-experiments/</guid>
       <description>&lt;p&gt;In 2019 I had the good fortune to be able to use some company hack days to see about learning how various flavours of reinforcement learning work.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Road to Sheep Island</title>
-      <link>http://jeremystevens.net/projects/road-to-sheep-island/</link>
+      <link>https://jeremystevens.net/projects/road-to-sheep-island/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/road-to-sheep-island/</guid>
+      <guid>https://jeremystevens.net/projects/road-to-sheep-island/</guid>
       <description>&lt;p&gt;Building on my procedurally-generated island mesh, the next step was to see about bringing some life to the land.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Island Mesh</title>
-      <link>http://jeremystevens.net/projects/island-mesh/</link>
+      <link>https://jeremystevens.net/projects/island-mesh/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/island-mesh/</guid>
+      <guid>https://jeremystevens.net/projects/island-mesh/</guid>
       <description>&lt;p&gt;Building on Voronoi and Delaunay grids, I then sought to work out how to turn that into geometry in Unity.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Early World Gen Tweets</title>
-      <link>http://jeremystevens.net/projects/early-world-generator/</link>
+      <link>https://jeremystevens.net/projects/early-world-generator/</link>
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/early-world-generator/</guid>
+      <guid>https://jeremystevens.net/projects/early-world-generator/</guid>
       <description>&lt;p&gt;Early experiments learning Voronoi and Delaunay algorithms with the excellent resources provided on &lt;a href=&#34;https://www.redblobgames.com/&#34;&gt;https://www.redblobgames.com/&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://jeremystevens.net/about/</link>
+      <link>https://jeremystevens.net/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/about/</guid>
+      <guid>https://jeremystevens.net/about/</guid>
       <description>Who? I&amp;rsquo;m an Android developer with an enthusiastic but sporadic interest in other technologies. Sometimes that means that I&amp;rsquo;m making bits of games in Unity 3D, poking around machine learning basics, or dabbling in web development stacks.
 Why? I&amp;rsquo;ve had a clumsy, plain html page for a while, and have always been a bit sad about it. An incidental Twitter comment about using Hugo for journaling got me excited, and with a long weekend giving me a bit of time I thought I&amp;rsquo;d have a go at renovating my website into something a little more shiny.</description>
     </item>

@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>unity on Jez</title>
-    <link>http://jeremystevens.net/tags/unity/</link>
+    <link>https://jeremystevens.net/tags/unity/</link>
     <description>Recent content in unity on Jez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://jeremystevens.net/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeremystevens.net/tags/unity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hex Grid Worlds</title>
-      <link>http://jeremystevens.net/projects/hex-world/</link>
+      <link>https://jeremystevens.net/projects/hex-world/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/hex-world/</guid>
+      <guid>https://jeremystevens.net/projects/hex-world/</guid>
       <description>&lt;p&gt;Repurposing hexagon grid board core logic from Hextopia with an aim to building the foundations of a new game.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Gun Turret</title>
-      <link>http://jeremystevens.net/projects/gun-turret/</link>
+      <link>https://jeremystevens.net/projects/gun-turret/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/gun-turret/</guid>
+      <guid>https://jeremystevens.net/projects/gun-turret/</guid>
       <description>&lt;p&gt;Borne of a desire to see if I could wrangle Unity&amp;rsquo;s then brand-new ECS library into some dramatic large-scale interactive battle scene I set out to see about building a gun turret.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sheep Island</title>
-      <link>http://jeremystevens.net/projects/sheep-island/</link>
+      <link>https://jeremystevens.net/projects/sheep-island/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/sheep-island/</guid>
+      <guid>https://jeremystevens.net/projects/sheep-island/</guid>
       <description>&lt;p&gt;Sheep Island was a little project I made as a Christmas gift for a close friend. It&amp;rsquo;s the first self-generated project since I became a developer where I&amp;rsquo;ve actually managed to get to a point where I could call it &amp;ldquo;finished&amp;rdquo;!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Spider Bots</title>
-      <link>http://jeremystevens.net/projects/spider-bots/</link>
+      <link>https://jeremystevens.net/projects/spider-bots/</link>
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/spider-bots/</guid>
+      <guid>https://jeremystevens.net/projects/spider-bots/</guid>
       <description>&lt;p&gt;A silly hack-day inverse kinematics exploration that I kinda got carried away with.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hextopia</title>
-      <link>http://jeremystevens.net/projects/hextopia/</link>
+      <link>https://jeremystevens.net/projects/hextopia/</link>
       <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/hextopia/</guid>
+      <guid>https://jeremystevens.net/projects/hextopia/</guid>
       <description>&lt;p&gt;Turn-based strategy game inspired by playing too much Polytopia and wondering &amp;ldquo;how hard could it be?&amp;rdquo;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>http://jeremystevens.net/projects/machine-learning-experiments/</link>
+      <link>https://jeremystevens.net/projects/machine-learning-experiments/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/machine-learning-experiments/</guid>
+      <guid>https://jeremystevens.net/projects/machine-learning-experiments/</guid>
       <description>&lt;p&gt;In 2019 I had the good fortune to be able to use some company hack days to see about learning how various flavours of reinforcement learning work.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Road to Sheep Island</title>
-      <link>http://jeremystevens.net/projects/road-to-sheep-island/</link>
+      <link>https://jeremystevens.net/projects/road-to-sheep-island/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/road-to-sheep-island/</guid>
+      <guid>https://jeremystevens.net/projects/road-to-sheep-island/</guid>
       <description>&lt;p&gt;Building on my procedurally-generated island mesh, the next step was to see about bringing some life to the land.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Island Mesh</title>
-      <link>http://jeremystevens.net/projects/island-mesh/</link>
+      <link>https://jeremystevens.net/projects/island-mesh/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jeremystevens.net/projects/island-mesh/</guid>
+      <guid>https://jeremystevens.net/projects/island-mesh/</guid>
       <description>&lt;p&gt;Building on Voronoi and Delaunay grids, I then sought to work out how to turn that into geometry in Unity.&lt;/p&gt;</description>
     </item>
     
