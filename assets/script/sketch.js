@@ -1,5 +1,5 @@
 // https://p5js.org/examples/hello-p5-flocking.html
-let canvasHeight = 400;
+let height = 400;
 let backgroundValue = 51;
 
 let boids = [];
@@ -17,8 +17,7 @@ let mouseInfluenceRange = 200.0;
 let mouseInfluenceSqr = mouseInfluenceRange * mouseInfluenceRange;
 
 function setup() {
-    var canvas = createCanvas(windowWidth, canvasHeight);
-    canvas.class('element');
+    var canvas = createCanvas(windowWidth, height);    
     canvas.parent('sketch-holder');
 
     for (let i = 0; i < boidCount; i++) {
@@ -27,7 +26,7 @@ function setup() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, canvasHeight);
+    resizeCanvas(windowWidth, height);
 }
 
 function draw() {
