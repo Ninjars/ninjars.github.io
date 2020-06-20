@@ -17,7 +17,7 @@ let mouseInfluenceRange = 200.0;
 let mouseInfluenceSqr = mouseInfluenceRange * mouseInfluenceRange;
 
 function setup() {
-    var canvas = createCanvas(windowWidth, height);    
+    var canvas = createCanvas(windowWidth, getHeight());    
     canvas.parent('sketch-holder');
 
     for (let i = 0; i < boidCount; i++) {
@@ -26,7 +26,7 @@ function setup() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, height);
+    resizeCanvas(windowWidth, getHeight());
 }
 
 function draw() {
@@ -36,6 +36,10 @@ function draw() {
     for (let i = 0; i < boids.length; i++) {
         boids[i].run(mousePosition, boids);
     }
+}
+
+function getHeight() {
+    return document.getElementById('top-box').offsetHeight
 }
 
 class Boid {
