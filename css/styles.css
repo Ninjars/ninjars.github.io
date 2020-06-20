@@ -1,0 +1,9 @@
+.backgroundsketch {
+    position: absolute;
+    overflow: hidden;
+	z-index: -1;
+}
+
+.foregroundsketch {
+	overflow: hidden;
+}
