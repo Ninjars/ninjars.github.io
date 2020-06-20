@@ -1,7 +1,7 @@
 // inpired and derived from https://p5js.org/examples/hello-p5-flocking.html
 
 let boids = [];
-let boidCount = 100;
+let boidCount = 50;
 let boidSize = 10;
 let boidMaxSpeed = 1.2;
 let boidMaxForce = 0.015;
@@ -9,13 +9,13 @@ let boidMaxForce = 0.015;
 let repelFactor = 1;
 let attractFactor = 0.5;
 
-let desiredSeparation = 25.0;
+let desiredSeparation = 45.0;
 let lineRange = 75.0;
 let mouseInfluenceRange = 200.0;
 let mouseInfluenceSqr = mouseInfluenceRange * mouseInfluenceRange;
 
 function setup() {
-    var canvas = createCanvas(windowWidth, getHeight());    
+    let canvas = createCanvas(windowWidth, getHeight());    
     canvas.parent('sketch-holder');
 
     for (let i = 0; i < boidCount; i++) {
@@ -49,11 +49,13 @@ class Boid {
         this.r = 3;
         this.maxSpeed = boidMaxSpeed;
         this.maxForce = boidMaxForce;
+        this.separationSteer = createVector(0, 0);
+        this.separationCount = 0;
     }
 
     run(mousePosition, boids) {
         let distances = [];
-        for (let i = 0; i < boids.length; i++) {
+        for (let i = this.id; i < boids.length; i++) {
             distances[i] = p5.Vector.dist(this.position, boids[i].position);
         }
         this.render(mousePosition, boids, distances);
@@ -106,17 +108,25 @@ class Boid {
     }
 
     interact(mousePosition, boids, distances) {
-        let separationSteer = this.getSeparationForce(boids, distances);
+        let repelSteer = this.getSeparationForce(boids, distances);
         let mouseSteer = this.getMouseAttractionForce(mousePosition);
 
-        this.applyForce(separationSteer.mult(repelFactor));
+        this.applyForce(repelSteer.mult(repelFactor));
         this.applyForce(mouseSteer.mult(attractFactor));
+
+        this.separationSteer = createVector(0, 0);
+        this.separationCount = 0;
+    }
+
+    addSeparationSteer(steer) {
+        this.separationCount++;
+        this.separationSteer.add(steer);
     }
 
     getSeparationForce(boids, distances) {
-        let steer = createVector(0, 0);
-        let count = 0;
-        for (let i = 0; i < boids.length; i++) {
+        let steer = this.separationSteer;
+        let count = this.separationCount;
+        for (let i = this.id; i < boids.length; i++) {
             let distance = distances[i];
             if (distance > 0 && distance < desiredSeparation) {
                 let vector = p5.Vector.sub(this.position, boids[i].position);
@@ -124,6 +134,7 @@ class Boid {
                 // Weight the contribution of this steer by distance
                 vector.div(distance);
                 steer.add(vector);
+                boids[i].addSeparationSteer(vector.mult(-1));
                 count++;
             }
         }
