@@ -1,4 +1,4 @@
-baseURL = "http://jeremystevens.net/"
+baseURL = "https://jeremystevens.net/"
 languageCode = "en-us"
 title = "Jez"
 publishDir = "public"
