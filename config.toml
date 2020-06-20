@@ -18,7 +18,7 @@ enableRobotsTXT = true
 
 [params]
   favicon = ""
-  site_logo = ""
+  site_logo = "/images/cats-logo.png"
   description = "A place for my dabblings"
   facebook = ""
   twitter = "https://twitter.com/NinjaJez"
