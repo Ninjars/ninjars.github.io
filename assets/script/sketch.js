@@ -1,7 +1,8 @@
 // inpired and derived from https://p5js.org/examples/hello-p5-flocking.html
 
 let boids = [];
-let boidCount = 50;
+let boidCountLarge = 100;
+let boidCountSmall = 50;
 let boidSize = 10;
 let boidMaxSpeed = 1.2;
 let boidMaxForce = 0.015;
@@ -9,15 +10,30 @@ let boidMaxForce = 0.015;
 let repelFactor = 1;
 let attractFactor = 0.5;
 
-let desiredSeparation = 45.0;
-let lineRange = 75.0;
-let mouseInfluenceRange = 200.0;
-let mouseInfluenceSqr = mouseInfluenceRange * mouseInfluenceRange;
+let desiredSeparationLarge = 45.0;
+let desiredSeparationSmall = 25.0;
+let lineRangeLarge = 75.0;
+let lineRangeSmall = 30.0;
+let mouseInfluenceRangeLarge = 200.0;
+let mouseInfluenceRangeSmall = 200.0;
+
+var isSmall;
+var desiredSeparation;
+var lineRange;
+var mouseInfluenceRange;
+var mouseInfluenceSqr;
 
 function setup() {
     let canvas = createCanvas(windowWidth, getHeight());    
     canvas.parent('sketch-holder');
 
+    isSmall = windowWidth < 480;
+    desiredSeparation = isSmall ? desiredSeparationSmall : desiredSeparationLarge;
+    lineRange = isSmall ? lineRangeSmall : lineRangeLarge;
+    mouseInfluenceRange = isSmall ? mouseInfluenceRangeSmall : mouseInfluenceRangeLarge;
+
+    mouseInfluenceSqr = mouseInfluenceRange * mouseInfluenceRange;
+    let boidCount = isSmall ? boidCountSmall : boidCountLarge;
     for (let i = 0; i < boidCount; i++) {
         boids[i] = new Boid(i, random(width), random(height));
     }
