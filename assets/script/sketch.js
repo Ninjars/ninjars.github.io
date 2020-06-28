@@ -1,21 +1,21 @@
 // inpired and derived from https://p5js.org/examples/hello-p5-flocking.html
 
 let boids = [];
-let boidCountLarge = 100;
+let boidCountLarge = 150;
 let boidCountSmall = 50;
 let boidSize = 10;
-let boidMaxSpeed = 1.2;
-let boidMaxForce = 0.015;
+let boidMaxSpeed = 1.3;
+let boidMaxForce = 0.018;
 
 let repelFactor = 1;
 let attractFactor = 0.5;
 
-let desiredSeparationLarge = 45.0;
-let desiredSeparationSmall = 25.0;
+let desiredSeparationLarge = 35.0;
+let desiredSeparationSmall = 15.0;
 let lineRangeLarge = 75.0;
 let lineRangeSmall = 30.0;
 let mouseInfluenceRangeLarge = 200.0;
-let mouseInfluenceRangeSmall = 200.0;
+let mouseInfluenceRangeSmall = 150.0;
 
 var isSmall;
 var desiredSeparation;
