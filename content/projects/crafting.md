@@ -1,5 +1,5 @@
 ---
-title: "Crafting Tweets"
+title: "Crafting"
 date: 2020-05-07
 tags: [hardware]
 ---

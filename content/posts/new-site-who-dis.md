@@ -3,6 +3,7 @@ title: "New Site Who Dis"
 featured_image: "/images/jez-eyes.jpg"
 omit_header_text: true
 date: 2020-06-19
+tags: ["web"]
 ---
 Welcome to jeremystevens.net 2.0!
 <!--more-->
