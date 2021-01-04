@@ -1,0 +1,56 @@
+{{ define "pagehead" }}
+    <link rel="stylesheet" href="/css/unitystyle.css" type="text/css">
+    <script src="/src/UnityTemplateData/UnityProgress.js" type="text/javascript"></script>
+    {{ with .Params.game }}
+        <script src='/src/{{ . }}/Build/UnityLoader.js' type="text/javascript"></script>
+        <script>
+            var unityInstance = UnityLoader.instantiate("unityContainer", '/src/{{ . }}/Build/Builds.json', { onProgress: UnityProgress });
+        </script>
+    {{ end }}
+{{ end }}
+
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 mw8">
+        <header>
+            <aside class="instapaper_ignoref b helvetica tracked">
+                {{with .CurrentSection.Title }}{{. | upper }}{{end}}
+            </aside>
+            {{ partial "social-share.html" . }}
+            {{ with .Params.author }}
+            <p class="tracked">
+                By <strong>
+                    {{ if reflect.IsSlice . }}
+                    {{ delimit . ", " | markdownify }}
+                    {{else}}
+                    {{ . | markdownify }}
+                    {{ end }}
+                </strong>
+            </p>
+            {{ end }}
+            {{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
+            <time class="f6 mv4 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{- .Date.Format "January 2, 2006" -}}
+            </time>
+        </header>
+        <div class="f4">
+            {{ .Content }}
+        </div>
+        <div class="di fl nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+            {{- partial "tags.html" . -}}
+            <div class="mt6 instapaper_ignoref">
+                {{ if .Site.DisqusShortname }}
+                {{ template "_internal/disqus.html" . }}
+                {{ end }}
+                {{ if .Site.Params.commentoEnable }}
+                {{- partial "commento.html" . -}}
+                {{ end }}
+            </div>
+        </div>
+        <aside class="di fr w-30-l mt3">
+          {{- partial "menu-contextual.html" . -}}
+        </aside>
+    </article>
+</div>
+{{ end }}
