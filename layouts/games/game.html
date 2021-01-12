@@ -12,7 +12,7 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 mw8">
+    <article class="center cf pv5 ph3 mw8">
         <header>
             <aside class="instapaper_ignoref b helvetica tracked">
                 {{with .CurrentSection.Title }}{{. | upper }}{{end}}
