@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jeremystevens.net/</loc>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/posts/</loc>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/posts/quick-reference/</loc>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/tags/</loc>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/tags/web/</loc>
+    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://jeremystevens.net/tags/game/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -31,20 +66,6 @@
   </url>
   
   <url>
-    <loc>https://jeremystevens.net/</loc>
-    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremystevens.net/tags/</loc>
-    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://jeremystevens.net/tags/unity/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -52,21 +73,7 @@
   </url>
   
   <url>
-    <loc>https://jeremystevens.net/posts/</loc>
-    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://jeremystevens.net/posts/making-of/</loc>
-    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremystevens.net/tags/web/</loc>
     <lastmod>2020-06-28T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -227,6 +234,12 @@
   
   <url>
     <loc>https://jeremystevens.net/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/recipes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
