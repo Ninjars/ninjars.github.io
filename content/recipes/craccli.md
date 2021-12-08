@@ -4,7 +4,6 @@ featured_image: ""
 omit_header_text: false
 date: 2021-12-08
 tags: ["food", "side dish"]
-draft: true
 ---
 Affectionately referred to as "craccli" due to just how darn tasty this is! 
 <!--more-->

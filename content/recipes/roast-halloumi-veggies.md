@@ -4,7 +4,6 @@ featured_image: ""
 omit_header_text: false
 date: 2021-12-06
 tags: ["food", "roast", "main dish"]
-draft: true
 ---
 AKA "Halloumi Snack" - a flexible, easy to prepare and most importantly DELICIOUS dish.
 <!--more-->

@@ -4,7 +4,6 @@ featured_image: ""
 omit_header_text: false
 date: 2021-12-05
 tags: ["food", "pressure cooker", "main dish"]
-draft: true
 ---
 My favourite pressure cooker recipe for making a warming, filling, delicious snack perfect for colder months.
 <!--more-->
