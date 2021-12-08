@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recipes on Jez</title>
-    <link>https://jeremystevens.net/recipes/</link>
-    <description>Recent content in Recipes on Jez</description>
+    <title>main dish on Jez</title>
+    <link>https://jeremystevens.net/tags/main-dish/</link>
+    <description>Recent content in main dish on Jez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jeremystevens.net/recipes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeremystevens.net/tags/main-dish/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Pan-fried Tenderstem Broccoli</title>
-      <link>https://jeremystevens.net/recipes/craccli/</link>
-      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://jeremystevens.net/recipes/craccli/</guid>
-      <description>&lt;p&gt;Affectionately referred to as &amp;ldquo;craccli&amp;rdquo; due to just how darn tasty this is!&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Roast Halloumi and Veggies</title>

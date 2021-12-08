@@ -3,7 +3,70 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jeremystevens.net/tags/food/</loc>
+    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://jeremystevens.net/</loc>
+    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/recipes/craccli/</loc>
+    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/recipes/</loc>
+    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/tags/side-dish/</loc>
+    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/tags/</loc>
+    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/tags/main-dish/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/tags/roast/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/recipes/roast-halloumi-veggies/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremystevens.net/recipes/lentils/</loc>
     <lastmod>2021-12-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -17,14 +80,14 @@
   </url>
   
   <url>
-    <loc>https://jeremystevens.net/posts/quick-reference/</loc>
+    <loc>https://jeremystevens.net/tags/pressure-cooker/</loc>
     <lastmod>2021-12-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jeremystevens.net/tags/</loc>
+    <loc>https://jeremystevens.net/posts/quick-reference/</loc>
     <lastmod>2021-12-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -234,12 +297,6 @@
   
   <url>
     <loc>https://jeremystevens.net/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremystevens.net/recipes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

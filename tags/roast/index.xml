@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>roast on Jez</title>
+    <link>https://jeremystevens.net/tags/roast/</link>
+    <description>Recent content in roast on Jez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jeremystevens.net/tags/roast/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Roast Halloumi and Veggies</title>
+      <link>https://jeremystevens.net/recipes/roast-halloumi-veggies/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeremystevens.net/recipes/roast-halloumi-veggies/</guid>
+      <description>&lt;p&gt;AKA &amp;ldquo;Halloumi Snack&amp;rdquo; - a flexible, easy to prepare and most importantly DELICIOUS dish.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
