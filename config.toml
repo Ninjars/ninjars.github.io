@@ -1,4 +1,4 @@
-baseURL = "https://jeremystevens.net/"
+baseURL = "https://ninjars.github.io/"
 languageCode = "en-us"
 title = "Jez"
 publishDir = "public"
