@@ -1,249 +1,126 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>The Making Of | Jez</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.72.0" />
-    
-    
-      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-    
-
-    
-    
-      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
-    
-
-    
-      <link rel="stylesheet" href="/css/styles.css">
-    
-      <link rel="stylesheet" href="/css/syntax.css">
-    
-
-    
-      
-
-    
-
-    
-    
-    <meta property="og:title" content="The Making Of" />
-<meta property="og:description" content="My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://jeremystevens.net/posts/making-of/" />
-<meta property="article:published_time" content="2020-06-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-06-28T00:00:00+00:00" />
-<meta itemprop="name" content="The Making Of">
-<meta itemprop="description" content="My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo.">
-<meta itemprop="datePublished" content="2020-06-28T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-06-28T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3379">
-
-
-
-<meta itemprop="keywords" content="web," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The Making Of"/>
-<meta name="twitter:description" content="My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo."/>
-
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-177109114-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-    
-	
-     
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
-
-    
-   
-  
-
-  
-  
-  <header class="cover bg-center" style="background-image: url('https://jeremystevens.net/images/sheep-stare.jpg');">
-    
-    <div class="pb3-m pb6-l ">
-    
-      
-<nav class="pv3 ph3 ph4-ns bg-black-60" role="navigation">
-
-  <div class="flex-ns justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        <img src="/images/cats-logo.png" class="mw3" alt="Jez" />
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-        <ul class="pl0 mr3 ml3-ns mr0-ns">
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/about/" title="About page">
-              About
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/games/" title="Games page">
-              Games
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
-              Posts
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
-              Projects
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/recipes/" title="Recipes page">
-              Recipes
-            </a>
-          </li>
-          
-        </ul>
-      
-      <div class="fr-m">
-      
-
-
-
-
-<a href="https://twitter.com/NinjaJez" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
-  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<title>The Making Of | Jez</title>
+<meta name=viewport content="width=device-width,minimum-scale=1">
+<meta name=description content="My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo.">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=ROBOTS content="INDEX, FOLLOW">
+<link rel=stylesheet href=/ananke/css/main.min.css>
+<link rel=stylesheet href=/css/styles.css>
+<link rel=stylesheet href=/css/syntax.css>
+<meta property="og:title" content="The Making Of">
+<meta property="og:description" content="My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ninjars.github.io/posts/making-of/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-06-28T00:00:00+00:00">
+<meta property="article:modified_time" content="2020-06-28T00:00:00+00:00">
+<meta itemprop=name content="The Making Of">
+<meta itemprop=description content="My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo."><meta itemprop=datePublished content="2020-06-28T00:00:00+00:00">
+<meta itemprop=dateModified content="2020-06-28T00:00:00+00:00">
+<meta itemprop=wordCount content="3379">
+<meta itemprop=keywords content="web,"><meta name=twitter:card content="summary">
+<meta name=twitter:title content="The Making Of">
+<meta name=twitter:description content="My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo.">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-177109114-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class="ma0 avenir bg-near-white">
+<header class="cover bg-center" style=background-image:url(https://ninjars.github.io/images/sheep-stare.jpg)>
+<div class="pb3-m pb6-l">
+<nav class="pv3 ph3 ph4-ns bg-black-60" role=navigation>
+<div class="flex-ns justify-between items-center center">
+<a href=/ class="f3 fw2 hover-white no-underline white-90 dib">
+<img src=/images/cats-logo.png class=mw3 alt=Jez>
+</a>
+<div class="flex-l items-center">
+<ul class="pl0 mr3 ml3-ns mr0-ns">
+<li class="list f5 f4-ns fw4 dib pr3">
+<a class="hover-white no-underline white-90" href=/about/ title="About page">
+About
+</a>
+</li>
+<li class="list f5 f4-ns fw4 dib pr3">
+<a class="hover-white no-underline white-90" href=/games/ title="Games page">
+Games
+</a>
+</li>
+<li class="list f5 f4-ns fw4 dib pr3">
+<a class="hover-white no-underline white-90" href=/posts/ title="Posts page">
+Posts
+</a>
+</li>
+<li class="list f5 f4-ns fw4 dib pr3">
+<a class="hover-white no-underline white-90" href=/projects/ title="Projects page">
+Projects
+</a>
+</li>
+<li class="list f5 f4-ns fw4 dib pr3">
+<a class="hover-white no-underline white-90" href=/recipes/ title="Recipes page">
+Recipes
+</a>
+</li>
+</ul>
+<div class=fr-m>
+<div class=ananke-socials>
+<a href=https://twitter.com/NinjaJez target=_blank class="twitter ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel=noopener aria-label="follow on Twitter——Opens in a new window">
+<span class=icon><svg style="enable-background:new 0 0 67 67" viewBox="0 0 67 67" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167 22.283c-2.619.953-4.274 3.411-4.086 6.101l.063 1.038-1.048-.127c-3.813-.487-7.145-2.139-9.974-4.915l-1.383-1.377-.356 1.017c-.754 2.267-.272 4.661 1.299 6.271.838.89.649 1.017-.796.487-.503-.169-.943-.296-.985-.233-.146.149.356 2.076.754 2.839.545 1.06 1.655 2.097 2.871 2.712l1.027.487-1.215.021c-1.173.0-1.215.021-1.089.467.419 1.377 2.074 2.839 3.918 3.475l1.299.444-1.131.678c-1.676.976-3.646 1.526-5.616 1.568C19.775 43.256 19 43.341 19 43.405c0 .211 2.557 1.397 4.044 1.864 4.463 1.377 9.765.783 13.746-1.568 2.829-1.673 5.657-5 6.978-8.221.713-1.716 1.425-4.851 1.425-6.354.0-.975.063-1.102 1.236-2.267.692-.678 1.341-1.419 1.467-1.631.21-.403.188-.403-.88-.043-1.781.636-2.033.551-1.152-.402.649-.678 1.425-1.907 1.425-2.267.0-.063-.314.042-.671.233-.377.212-1.215.53-1.844.72l-1.131.361-1.027-.7c-.566-.381-1.361-.805-1.781-.932C39.766 21.902 38.131 21.944 37.167 22.283zM33 64C16.432 64 3 50.569 3 34S16.432 4 33 4s30 13.431 30 30S49.568 64 33 64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }}"/></svg>
+</span>
+<span class=new-window><svg height="8" style="enable-background:new 0 0 1000 1000" viewBox="0 0 1e3 1e3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M598 128h298v298h-86V274L392 692l-60-60 418-418H598v-86zM810 810V512h86v298c0 46-40 86-86 86H214c-48 0-86-40-86-86V214c0-46 38-86 86-86h298v86H214v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg>
 </span></a>
-
-
-
-
-<a href="https://www.linkedin.com/in/jezstevens/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
+<a href=https://github.com/Ninjars target=_blank class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel=noopener aria-label="follow on GitHub——Opens in a new window">
+<span class=icon><svg style="enable-background:new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256 32C132.3 32 32 134.8 32 261.7c0 101.5 64.2 187.5 153.2 217.9 11.2 2.1 15.3-5 15.3-11.1.0-5.5-.2-19.9-.3-39.1-62.3 13.9-75.5-30.8-75.5-30.8-10.2-26.5-24.9-33.6-24.9-33.6-20.3-14.3 1.5-14 1.5-14 22.5 1.6 34.3 23.7 34.3 23.7 20 35.1 52.4 25 65.2 19.1 2-14.8 7.8-25 14.2-30.7-49.7-5.8-102-25.5-102-113.5.0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8.0.0 18.8-6.2 61.6 23.5 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 42.8-29.7 61.5-23.5 61.5-23.5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6.0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5.0 30.7-.3 55.5-.3 63 0 6.1 4 13.3 15.4 11C415.9 449.1 480 363.1 480 261.7 480 134.8 379.7 32 256 32z"/></svg>
+</span>
+<span class=new-window><svg height="8" style="enable-background:new 0 0 1000 1000" viewBox="0 0 1e3 1e3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M598 128h298v298h-86V274L392 692l-60-60 418-418H598v-86zM810 810V512h86v298c0 46-40 86-86 86H214c-48 0-86-40-86-86V214c0-46 38-86 86-86h298v86H214v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg>
 </span></a>
-
-
-<a href="https://github.com/Ninjars" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
+<a href=https://www.linkedin.com/in/jezstevens/ target=_blank class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel=noopener aria-label="follow on LinkedIn——Opens in a new window">
+<span class=icon><svg style="enable-background:new 0 0 65 65" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M50.837 48.137V36.425c0-6.275-3.35-9.195-7.816-9.195-3.604.0-5.219 1.983-6.119 3.374V27.71h-6.79c.09 1.917.0 20.427.0 20.427h6.79V36.729c0-.609.044-1.219.224-1.655.49-1.22 1.607-2.483 3.482-2.483 2.458.0 3.44 1.873 3.44 4.618v10.929H50.837zM22.959 24.922c2.367.0 3.842-1.57 3.842-3.531-.044-2.003-1.475-3.528-3.797-3.528s-3.841 1.524-3.841 3.528c0 1.961 1.474 3.531 3.753 3.531H22.959zM34 64C17.432 64 4 50.568 4 34 4 17.431 17.432 4 34 4s30 13.431 30 30c0 16.568-13.432 30-30 30zM26.354 48.137V27.71h-6.789v20.427h6.789z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }}"/></svg>
+</span>
+<span class=new-window><svg height="8" style="enable-background:new 0 0 1000 1000" viewBox="0 0 1e3 1e3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M598 128h298v298h-86V274L392 692l-60-60 418-418H598v-86zM810 810V512h86v298c0 46-40 86-86 86H214c-48 0-86-40-86-86V214c0-46 38-86 86-86h298v86H214v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg>
 </span></a>
-
-
-
-
-
-
-
-
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
 </nav>
-
-      <div class="tc-l pv6 ph3 ph4-ns">
-        
-      </div>
-    </div>
-  </header>
-
-
-
-    <main class="pb4" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked">
-          
-        POSTS
-      </aside>
-      
-
-
-
-
-  <div id="sharing" class="mt3">
-
-    
-    <a href="https://www.facebook.com/sharer.php?u=https://jeremystevens.net/posts/making-of/" class="facebook no-underline" aria-label="share on Facebook">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
-
-    </a>
-
-    
-    
-    <a href="https://twitter.com/share?url=https://jeremystevens.net/posts/making-of/&amp;text=The%20Making%20Of" class="twitter no-underline" aria-label="share on Twitter">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-    </a>
-
-    
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://jeremystevens.net/posts/making-of/&amp;title=The%20Making%20Of" class="linkedin no-underline" aria-label="share on LinkedIn">
-      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-    </a>
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">The Making Of</h1>
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2020-06-28T00:00:00Z">June 28, 2020</time>
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo.</p>
+<div class="tc-l pv6 ph3 ph4-ns">
+</div>
+</div>
+</header>
+<main class=pb7 role=main>
+<article class="flex-l flex-wrap justify-between mw8 center ph3">
+<header class="mt4 w-100">
+<aside class="instapaper_ignoref b helvetica tracked">
+POSTS
+</aside>
+<div id=sharing class="mt3 ananke-socials">
+<a href="https://twitter.com/share?url=https://ninjars.github.io/posts/making-of/&text=The%20Making%20Of" class="ananke-social-link twitter no-underline" aria-label="share on Twitter">
+<span class=icon><svg style="enable-background:new 0 0 67 67" viewBox="0 0 67 67" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167 22.283c-2.619.953-4.274 3.411-4.086 6.101l.063 1.038-1.048-.127c-3.813-.487-7.145-2.139-9.974-4.915l-1.383-1.377-.356 1.017c-.754 2.267-.272 4.661 1.299 6.271.838.89.649 1.017-.796.487-.503-.169-.943-.296-.985-.233-.146.149.356 2.076.754 2.839.545 1.06 1.655 2.097 2.871 2.712l1.027.487-1.215.021c-1.173.0-1.215.021-1.089.467.419 1.377 2.074 2.839 3.918 3.475l1.299.444-1.131.678c-1.676.976-3.646 1.526-5.616 1.568C19.775 43.256 19 43.341 19 43.405c0 .211 2.557 1.397 4.044 1.864 4.463 1.377 9.765.783 13.746-1.568 2.829-1.673 5.657-5 6.978-8.221.713-1.716 1.425-4.851 1.425-6.354.0-.975.063-1.102 1.236-2.267.692-.678 1.341-1.419 1.467-1.631.21-.403.188-.403-.88-.043-1.781.636-2.033.551-1.152-.402.649-.678 1.425-1.907 1.425-2.267.0-.063-.314.042-.671.233-.377.212-1.215.53-1.844.72l-1.131.361-1.027-.7c-.566-.381-1.361-.805-1.781-.932C39.766 21.902 38.131 21.944 37.167 22.283zM33 64C16.432 64 3 50.569 3 34S16.432 4 33 4s30 13.431 30 30S49.568 64 33 64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }}"/></svg>
+</span>
+</a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ninjars.github.io/posts/making-of/&title=The%20Making%20Of" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
+<span class=icon><svg style="enable-background:new 0 0 65 65" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M50.837 48.137V36.425c0-6.275-3.35-9.195-7.816-9.195-3.604.0-5.219 1.983-6.119 3.374V27.71h-6.79c.09 1.917.0 20.427.0 20.427h6.79V36.729c0-.609.044-1.219.224-1.655.49-1.22 1.607-2.483 3.482-2.483 2.458.0 3.44 1.873 3.44 4.618v10.929H50.837zM22.959 24.922c2.367.0 3.842-1.57 3.842-3.531-.044-2.003-1.475-3.528-3.797-3.528s-3.841 1.524-3.841 3.528c0 1.961 1.474 3.531 3.753 3.531H22.959zM34 64C17.432 64 4 50.568 4 34 4 17.431 17.432 4 34 4s30 13.431 30 30c0 16.568-13.432 30-30 30zM26.354 48.137V27.71h-6.789v20.427h6.789z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }}"/></svg>
+</span>
+</a>
+</div>
+<h1 class="f1 athelas mt3 mb1">The Making Of</h1>
+<time class="f6 mv4 dib tracked" datetime=2020-06-28T00:00:00Z>June 28, 2020</time>
+</header>
+<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>My contribution to the noble tradition of the first blog post written by a techie being about how the author set up their blog. Documentation of my process of building this site, using Hugo.</p>
 <p>I have been thinking for a while about how to build a modern static site that I could host on Github Pages. I want something that is easy to author additional content for - so ideally markdown rather than html. I would like to be able to modify or even create new components so I’m not limited to just what the framework provides. I’ve previously looked into a couple of frameworks - React, Wordpress, Ghost.org, Gatsby, NextJS, Jekyll - but I’d been put off either by struggling to understand the trade-offs of each option or not finding accessible entry points to get to the result I wanted quickly enough.</p>
 <p>Although I&rsquo;ve been an Android developer for a good few years I’ve only dabbled a little with web technologies, and those mostly at the start of my career. Although I want to broaden my skills by learning more about modern web development, I don’t want that to block my ability to get started blogging. At the same time, I feel like I have enough of a technical background that I don’t need to pay for a hosted solution!</p>
 <p>Prior to making this site, the only place my sideprojects have been documented publicly has been Twitter. Twitter is great for its immediacy and simplicity but it’s hard to follow the thread of a project through multiple disparate posts.</p>
-<h2 id="enter-hugo">Enter Hugo</h2>
-<p>One free day off I had the good fortune to spot this post by <a href="https://twitter.com/SarahJamieLewis">@SarahJamieLewis</a> where she mentions a simple workflow she uses to maintain a journaling blog:</p>
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I just use the hugo static site generator with all the posts stored in the top level content directory with a basic blog theme (Hyde) - so everything is a markdown file -  generate it manually every day, push it all to git, and sync it over to a host.</p>&mdash; Sarah Jamie Lewis (@SarahJamieLewis) <a href="https://twitter.com/SarahJamieLewis/status/1273511979596955649?ref_src=twsrc%5Etfw">June 18, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>Sarah’s tweet was a little signal that perhaps <a href="https://gohugo.io/">Hugo</a> was something that would Just Work™, and it turned out that that was all I needed to cut through the uncertainty and get started making something.</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>I started jumping right in with the <a href="https://gohugo.io/getting-started/quick-start/">quick-start tutorial</a>, immediately hitting the first minor hurdle: I&rsquo;m doing this on Windows.</p>
-<p>According to the <a href="https://gohugo.io/getting-started/installing#chocolatey-windows">Windows install</a> I should work out how to use the Windows package managers, and when I initially did this that was the rabbit hole I went down, but a) it didn’t work for me and b) the later I stumbled upon <a href="https://gohugo.io/getting-started/installing#windows">this install guide</a> which instead directed me to simply download the zipped exe from the releases page and stick it in a folder. I was pretty confused as to what went wrong with my Chocolatey install, but sometimes you’ve just gotta stay focused on the prize.</p>
+<h2 id=enter-hugo>Enter Hugo</h2>
+<p>One free day off I had the good fortune to spot this post by <a href=https://twitter.com/SarahJamieLewis>@SarahJamieLewis</a> where she mentions a simple workflow she uses to maintain a journaling blog:</p>
+<blockquote class=twitter-tweet data-conversation=none><p lang=en dir=ltr>I just use the hugo static site generator with all the posts stored in the top level content directory with a basic blog theme (Hyde) - so everything is a markdown file - generate it manually every day, push it all to git, and sync it over to a host.</p>&mdash; Sarah Jamie Lewis (@SarahJamieLewis) <a href="https://twitter.com/SarahJamieLewis/status/1273511979596955649?ref_src=twsrc%5Etfw">June 18, 2020</a></blockquote>
+<script async src=https://platform.twitter.com/widgets.js></script>
+<p>Sarah’s tweet was a little signal that perhaps <a href=https://gohugo.io/>Hugo</a> was something that would Just Work™, and it turned out that that was all I needed to cut through the uncertainty and get started making something.</p>
+<h2 id=getting-started>Getting Started</h2>
+<p>I started jumping right in with the <a href=https://gohugo.io/getting-started/quick-start/>quick-start tutorial</a>, immediately hitting the first minor hurdle: I&rsquo;m doing this on Windows.</p>
+<p>According to the <a href=https://gohugo.io/getting-started/installing#chocolatey-windows>Windows install</a> I should work out how to use the Windows package managers, and when I initially did this that was the rabbit hole I went down, but a) it didn’t work for me and b) the later I stumbled upon <a href=https://gohugo.io/getting-started/installing#windows>this install guide</a> which instead directed me to simply download the zipped exe from the releases page and stick it in a folder. I was pretty confused as to what went wrong with my Chocolatey install, but sometimes you’ve just gotta stay focused on the prize.</p>
 <p>The instructions provided for adding Hugo to the system path also didn’t work for me, but after a bit of research and wrangling I eventually had <code>hugo</code> set up as a valid command in my Windows powershell prompt. Victory!</p>
-<h2 id="create-a-new-site">Create a New Site</h2>
+<h2 id=create-a-new-site>Create a New Site</h2>
 <p>Step 2: <code>hugo new site quickstart</code> - I do enjoy it when a framework has a “do the setup for me please” instruction!</p>
 <p>Step 3: <code>git submodule</code> to add a theme - I didn’t expect to use Git for adding a theme, and at this point hadn’t yet set up a repository for the project. After setting up a repository, the theme didn’t end up actually being a submodule and behaved more like as if I’d just copied the files in. Worst case scenario this just means it will be less obvious to me if there’s an update to the theme later.</p>
 <p>A note about themes: coming from a mobile background I’m used to there being a big difference between theming elements and functional elements. The Android framework provides widgets, and the theme just defines what they look like. Here, the themes define not just styling and templates but also functional elements that the templates contain. This blurs the line for me on where the framework ends and the theme begins, and potentially makes choosing a theme a bigger decision than it initially appeared to be.</p>
@@ -251,209 +128,163 @@ if (!doNotTrack) {
 <p>Step 4: <code>hugo new posts/my-first-post.md</code> - worked well for me but reading around it looks like this may be very dependent on what theme you’re using, as this method will not take into account any headers that a given theme may require of its articles.</p>
 <p>Step 5: <code>hugo server -D</code> - I popped open a browser window pointing to the local host address and there was my shiny new website! Changes in the page codes are pretty much immediately shown without needing to manually refresh which is nice. Later I discovered some issues around css changes not being reflected due to browser caching, but in Chrome opening the dev tools disables the browser cache and helps when iterating on styling. Impressively, the theme and framework automagically create a home index page and a category page for the article, using the file hierarchy to generate appropriate tabs and titles and creating a “recent posts” widget on the main index page. Very nice, definitely appreciate the emphasis here on having some sensible and helpful default behaviours.</p>
 <p>Step 6: finishing off the configuration took a little while, as the meaning and use of the params (and what theme params there even were) took a while to suss out. Fortunately the fast local server made it very quick to iterate on changes, and it wasn&rsquo;t long before I felt comfortable experimenting with the possibilities here and had a handle on the basics.</p>
-<h2 id="so-what-next">So, What Next?</h2>
+<h2 id=so-what-next>So, What Next?</h2>
 <p>With all the various tangents and road bumps that working in a new framework bring it&rsquo;s taken me a good while to get to this point. However now the foundations are laid, it’s time to start authoring some content!</p>
-<p>My old site linked to a few of my early javascript experiments, but those are really rather old now&hellip; and I&rsquo;ve got a load of pics and vids on my twitter feed from my subsequent side projects! Turns out Hugo has built-in support for embedding a Tweet in a card, but after trying it out for a bit I discovered that it will sometimes display a second tweet from the thread. I want more control over what tweets are shown than that, so a bit of research later I have my first shortcode:
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<p>My old site linked to a few of my early javascript experiments, but those are really rather old now&mldr; and I&rsquo;ve got a load of pics and vids on my twitter feed from my subsequent side projects! Turns out Hugo has built-in support for embedding a Tweet in a card, but after trying it out for a bit I discovered that it will sometimes display a second tweet from the thread. I want more control over what tweets are shown than that, so a bit of research later I have my first shortcode:
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{ (<span style="color:#a6e22e">getJSON</span> <span style="color:#e6db74">&#34;https://api.twitter.com/1/statuses/oembed.json?hide_thread=1&amp;id=&#34;</span> (<span style="color:#a6e22e">index</span> .<span style="color:#a6e22e">Params</span> <span style="color:#ae81ff">0</span>)).<span style="color:#a6e22e">html</span> | <span style="color:#a6e22e">safeHTML</span> }}</code></pre></td></tr></table>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go>{{ (<span style=color:#a6e22e>getJSON</span> <span style=color:#e6db74>&#34;https://api.twitter.com/1/statuses/oembed.json?hide_thread=1&amp;id=&#34;</span> (<span style=color:#a6e22e>index</span> .<span style=color:#a6e22e>Params</span> <span style=color:#ae81ff>0</span>)).<span style=color:#a6e22e>html</span> | <span style=color:#a6e22e>safeHTML</span> }}</code></pre></td></tr></table>
 </div>
 </div>
 I recognise the <code>{{ }}</code> syntax as being “handlebars”, defining code invocations rather than html markup. There’s clearly a bit of html in there that correlates to the twitter api, but quite why it’s “getJSON” or exactly what “safeHTML” does I don’t know. I’m comfortable leaving that as a little bit of magic for now as my main objective here is to add the functionality now - I can always come back later to deepen my knowledge and understanding later.</p>
 <p>With the means to include tweets, building up my initial set of content boils down to going back over my tweets, grabbing the ids, and creating articles that logically group them. Initially I grouped by project, but there proved to be too much for a sensible article in some cases. I then shifted to grouping by focus, as often my projects could be broken down into macro features. This grouping helped me see the flow from one project to another as inspirations shifted and flowed, and was quite rewarding to go over.</p>
-<h2 id="whats-in-an-article">What&rsquo;s In An Article?</h2>
+<h2 id=whats-in-an-article>What&rsquo;s In An Article?</h2>
 <p>At this point I had a bunch of articles chronicling various side projects and evolutions there-of. I had content! Great - but what is all the metadata about, and how can I better present things? Setting the <code>date</code> page metadata to that of the last tweet on the page meant that the articles were automatically sorted in chronological order.</p>
-<p>However, the preview summaries were rather verbose and tended to pull in the raw text from the tweet, which wasn&rsquo;t great. A bit of research later indicated that the summary is by default the first 70 words of the article, but that you can also put in a <code>&lt;!--more--&gt;</code> annotation to be explicit about where the summary ends. A bit of work later and I&rsquo;d added editorialised introductions to each of my project articles with a short sentence or two that either summarized the contents or worked well as a hook.</p>
+<p>However, the preview summaries were rather verbose and tended to pull in the raw text from the tweet, which wasn&rsquo;t great. A bit of research later indicated that the summary is by default the first 70 words of the article, but that you can also put in a <code>&lt;!--more--></code> annotation to be explicit about where the summary ends. A bit of work later and I&rsquo;d added editorialised introductions to each of my project articles with a short sentence or two that either summarized the contents or worked well as a hook.</p>
 <p>Tags are another little piece of metadata that provide key words used to associate articles with one another, in order to populate the &ldquo;related articles&rdquo; list. Working out what tags I should use on a given article is going to be an ongoing process, with a goal of trying to keep the related articles list relevant and interesting.</p>
 <p>Next, what about pretty pictures? I assembled pictures for several of the articles, some taken from tweets and others by loading the project back up and taking a new screenshot. Using the <code>featured_image</code> metadata I was able to get these to appear relatively easily, but it wasn&rsquo;t quite what I wanted. By default the theme puts the title on top of the image, which is redundant when the article layout also has the title at the top of the content. Fortunately there&rsquo;s already metadata for this: <code>omit_header_text</code>. Great.</p>
 <p>However, there&rsquo;s also a 60% opaque black overlay that&rsquo;s applied to the image in order to ensure that the navigation text and other elements are visible even over light images, and this kinda messes with my style - if there&rsquo;s no title text, why should the whole image be masked? Here&rsquo;s where I made my first theme-override partials, getting <code>page-header.html</code> and <code>site-navigation.html</code> to react to the same property to change their backgrounds. If <code>omit_header_text</code> is set then the background will only be on the navigation bar, otherwise it will apply to the whole heading element.</p>
 <p>In <code>page-header</code> this means changing:
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pb3-m pb6-l bg-black-60&#34;</span>&gt;</code></pre></td></tr></table>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pb3-m pb6-l bg-black-60&#34;</span>&gt;</code></pre></td></tr></table>
 </div>
 </div>
 to:
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    {{ if .Params.omit_header_text }}
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pb3-m pb6-l &#34;</span>&gt;
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>    {{ if .Params.omit_header_text }}
+    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pb3-m pb6-l &#34;</span>&gt;
     {{ else }}
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pb3-m pb6-l bg-black-60&#34;</span>&gt;
+    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pb3-m pb6-l bg-black-60&#34;</span>&gt;
     {{ end }}</code></pre></td></tr></table>
 </div>
 </div>
 And in <code>site-navigation</code>:
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pv3 ph3 ph4-ns&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navigation&#34;</span>&gt;</code></pre></td></tr></table>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>    &lt;<span style=color:#f92672>nav</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pv3 ph3 ph4-ns&#34;</span> <span style=color:#a6e22e>role</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;navigation&#34;</span>&gt;</code></pre></td></tr></table>
 </div>
 </div>
 becomes:
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    {{ if .Params.omit_header_text }}
-    &lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pv3 ph3 ph4-ns bg-black-60&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navigation&#34;</span>&gt;
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>    {{ if .Params.omit_header_text }}
+    &lt;<span style=color:#f92672>nav</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pv3 ph3 ph4-ns bg-black-60&#34;</span> <span style=color:#a6e22e>role</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;navigation&#34;</span>&gt;
     {{ else }}
-    &lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pv3 ph3 ph4-ns&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navigation&#34;</span>&gt;
+    &lt;<span style=color:#f92672>nav</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;pv3 ph3 ph4-ns&#34;</span> <span style=color:#a6e22e>role</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;navigation&#34;</span>&gt;
     {{ end }}</code></pre></td></tr></table>
 </div>
 </div></p>
 <p>There’s an assumption made here that you’re only setting <code>omit_header_text</code> when <code>featured_image</code> is set, so I’ve added the potential for me to make a mistake and end up with two semi-transparent backgrounds overlapping each other.</p>
-<p>After playing around with a couple of different screen widths I noticed that the image was scaling from the top, which meant on wide displays the middle of the images was being lost, when normally that&rsquo;s where key features are. Easy fix, fortunately - just opened <code>page-header</code> back up and changed the header class from <code>&quot;cover bg-top&quot;</code> to <code>&quot;cover bg-center&quot;</code>, and the Tachyons styling framework does the rest.</p>
-<h2 id="grouping-articles">Grouping Articles</h2>
+<p>After playing around with a couple of different screen widths I noticed that the image was scaling from the top, which meant on wide displays the middle of the images was being lost, when normally that&rsquo;s where key features are. Easy fix, fortunately - just opened <code>page-header</code> back up and changed the header class from <code>"cover bg-top"</code> to <code>"cover bg-center"</code>, and the Tachyons styling framework does the rest.</p>
+<h2 id=grouping-articles>Grouping Articles</h2>
 <p>With the bulk of the content built out as “project” articles I moved on to add an &ldquo;About&rdquo; page. The position of the page in the file hierarchy affects how they are grouped in the website navigation, so by putting the About page next to the Projects folder it appears as a top level navigation item. The theme creates a default page for the Projects category to be the destination of that navigation item, consisting of a list of its contained articles.</p>
 <p>Next, I wanted to add another category alongside Projects to hold Posts - writings that aren’t necessarily related to a specific project. I created a new folder and added a draft article, but then noticed that although this new article was the most recently created in the site, it wasn’t popping up in the “recent projects” section on the home page.</p>
 <p>That the name was &ldquo;projects&rdquo; and not &ldquo;posts&rdquo; was a clue, and after a bit of researching I had my answer: by default, the recent articles list is populated from the largest &ldquo;article category&rdquo;, and I had two - one with all the project summary articles in it, and the other with my draft &ldquo;first post&rdquo; article. I started looking into how to write my own partial that would pull articles from multiple categories, but struggled at first to work out how to include my own partial (unfamiliar syntax in a new framework, after all!). Getting any of the code samples I was finding online to actually work was also a challenge. It looks like Hugo has changed quite rapidly over the last few years and it’s not even at a 1.0 release yet, and on top of that there&rsquo;s a lot of conflation between what&rsquo;s a Hugo property or param, and what comes from the unique behaviours of various themes.</p>
 <p>Eventually I thought to take a step back, read some documentation, and discovered that there&rsquo;s actually a <code>mainSections</code> config param that allows you to declare multiple categories that will be automatically included in the recent articles summary. The “View All” button will take you to the index page for only one of the sections, however, so the UX isn’t perfect for discovering additional content. Still, it&rsquo;s certainly better than it was before.</p>
-<h2 id="site-logo">Site Logo</h2>
+<h2 id=site-logo>Site Logo</h2>
 <p>Whilst I was working on all this, my supportive girlfriend had been working on a logo image as a surprise for me! Super easy to integrate into the site with an already-declared config param, it replaced the site title in the top left of the navigation bar.</p>
 <p>However as I played with the responsive layout I was surprised to see that at the small size bracket the logo became massive, basically full-width, causing the header to expand to fill most of a mobile screen! Clearly that was not a good UX for the home page, so I rolled up my sleeves and prepared to properly get to grips with how the styling works.</p>
-<h2 id="its-all-about-tachyons">It&rsquo;s All About Tachyons</h2>
-<p>The theme uses something called <a href="https://tachyons.io/docs/">Tachyons</a> to abstract away css styling into a bunch of cryptic class acronyms - on first look something like <code>&lt;div class=&quot;tc-l pv6 ph3 ph4-ns&quot;&gt;</code> is just obfuscated gibberish. The docs themselves are a pain for an absolute beginner because it’s not clear which section one should look in to find the definition for a tag. In the end my flow became googling <code>tachyons &lt;cryptic gibberish&gt;</code> until I got my bearings.</p>
-<p>The key thing to address my layout challenge is how Tachyons handles media queries for pages with dependent styling. A hyphen is used to indicate a property that is only applied when the screen width falls into a certain bracket. The modifiers are <code>-m</code> for &ldquo;medium&rdquo;, <code>-l</code> for &ldquo;large&rdquo; and <code>-ns</code> for &ldquo;not small&rdquo;, i.e. medium or large. So in the example given above <code>tc-l pv6 ph3 ph4-ns&quot;</code>, <code>tc</code>, or &ldquo;text center&rdquo; is only applied on large layouts. <code>ph3</code> (padding horizontal size 3) is applied to small screens, and is overridden by <code>ph4</code> on medium and large.</p>
+<h2 id=its-all-about-tachyons>It&rsquo;s All About Tachyons</h2>
+<p>The theme uses something called <a href=https://tachyons.io/docs/>Tachyons</a> to abstract away css styling into a bunch of cryptic class acronyms - on first look something like <code>&lt;div class="tc-l pv6 ph3 ph4-ns"></code> is just obfuscated gibberish. The docs themselves are a pain for an absolute beginner because it’s not clear which section one should look in to find the definition for a tag. In the end my flow became googling <code>tachyons &lt;cryptic gibberish></code> until I got my bearings.</p>
+<p>The key thing to address my layout challenge is how Tachyons handles media queries for pages with dependent styling. A hyphen is used to indicate a property that is only applied when the screen width falls into a certain bracket. The modifiers are <code>-m</code> for &ldquo;medium&rdquo;, <code>-l</code> for &ldquo;large&rdquo; and <code>-ns</code> for &ldquo;not small&rdquo;, i.e. medium or large. So in the example given above <code>tc-l pv6 ph3 ph4-ns"</code>, <code>tc</code>, or &ldquo;text center&rdquo; is only applied on large layouts. <code>ph3</code> (padding horizontal size 3) is applied to small screens, and is overridden by <code>ph4</code> on medium and large.</p>
 <p>Armed with this understanding I was able to make modifications to <code>site-navigation.html</code>, changing widths and flex behaviours to make the logo appear in a way that felt cleaner to me. This was the point where I finally felt like the fog was clearing around how the theme&rsquo;s style framework is configured. I was able to not only query parameters to adjust the behaviour of theme components but also to make intentional and targeted changes to the framework managing the CSS behaviour too.</p>
-<p>To improve readability I wanted to modify the styling of inline <code>&lt;code&gt;</code> blocks to display with their own styling. Markdown already supports inline code, but the theme’s style is very subtle, making the difference hard to spot. Overriding the style of an element that’s already declared by the theme as fortunately well supported by the theme: :all I needed to do was add my css file to the static folder and add the path to it to a <code>custom_css</code> config param like so to have it added to the header of each page:
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+<p>To improve readability I wanted to modify the styling of inline <code>&lt;code></code> blocks to display with their own styling. Markdown already supports inline code, but the theme’s style is very subtle, making the difference hard to spot. Overriding the style of an element that’s already declared by the theme as fortunately well supported by the theme: :all I needed to do was add my css file to the static folder and add the path to it to a <code>custom_css</code> config param like so to have it added to the header of each page:
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>params</span>]
   ...
-  <span style="color:#a6e22e">custom_css</span> = [<span style="color:#e6db74">&#34;/css/styles.css&#34;</span>]</code></pre></td></tr></table>
+  <span style=color:#a6e22e>custom_css</span> = [<span style=color:#e6db74>&#34;/css/styles.css&#34;</span>]</code></pre></td></tr></table>
 </div>
 </div>
 Now I have an easy place to override or define any other styles I might need to.</p>
-<h2 id="syntactic-highlighting">Syntactic Highlighting</h2>
+<h2 id=syntactic-highlighting>Syntactic Highlighting</h2>
 <p>This brings me to the finishing touch to the styling: I wanted to be able to add code blocks with pretty syntactic highlights. I&rsquo;ve used that functionality several times in this post already!</p>
-<p>Markdown supports language syntactic highlighting to an extent, but Hugo also has a powerful integration with <a href="https://github.com/alecthomas/chroma">Chroma</a> <a href="https://gohugo.io/content-management/syntax-highlighting/">out of the box</a>.
+<p>Markdown supports language syntactic highlighting to an extent, but Hugo also has a powerful integration with <a href=https://github.com/alecthomas/chroma>Chroma</a> <a href=https://gohugo.io/content-management/syntax-highlighting/>out of the box</a>.
 First generate the css file:</p>
-<pre><code>hugo gen chromastyles --style=monokai &gt; syntax.css
+<pre tabindex=0><code>hugo gen chromastyles --style=monokai &gt; syntax.css
 </code></pre><p>Then stick it in the <code>static</code> folder and add it to the <code>custom_css</code> param, and finally invoke it around code blocks, replacing the <code>```</code> markdown syntax with this sort of shortcode:</p>
-<pre><code>{{&lt; highlight html &quot;linenos=table&quot; &gt;}} 
+<pre tabindex=0><code>{{&lt; highlight html &quot;linenos=table&quot; &gt;}} 
 content goes here 
 {{&lt; / highlight &gt;}}
-</code></pre><h2 id="publishing">Publishing</h2>
-<p>Right from the beginning my goal here has been to be able to publish a site with minimal fuss to Github Pages. Fortunately, this is a use-case that Hugo <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">directly supports</a>. Following the instructions there for the Github User pages was relatively straightforward, involving setting a submodule to commit the <code>public</code> folder to the “master” release branch. The bigger challenge was working out what the expected workflow was: you build the website, populating the public folder. This change is then committed to the release submodule, which will cause the website to update once pushed. However, this then means that your repo is now behind the submodule, so you need to make an additional commit to track that release commit - and then what about your develop branch and your master branch? How do they synchronise?</p>
+</code></pre><h2 id=publishing>Publishing</h2>
+<p>Right from the beginning my goal here has been to be able to publish a site with minimal fuss to Github Pages. Fortunately, this is a use-case that Hugo <a href=https://gohugo.io/hosting-and-deployment/hosting-on-github/>directly supports</a>. Following the instructions there for the Github User pages was relatively straightforward, involving setting a submodule to commit the <code>public</code> folder to the “master” release branch. The bigger challenge was working out what the expected workflow was: you build the website, populating the public folder. This change is then committed to the release submodule, which will cause the website to update once pushed. However, this then means that your repo is now behind the submodule, so you need to make an additional commit to track that release commit - and then what about your develop branch and your master branch? How do they synchronise?</p>
 <p>The workflow I have settled on is to keep the release and develop branches separate. Release commits consist of the build artefacts and dev has the source files. Whenever the release branch is updated the dev branch gets a “public release” commit to update its submodule, but the actual public folder changes are not tracked directly by the dev branch. This isn’t how I’m used to working - in mobile dev you don’t commit the build artefact, but this seems to give a reasonable separation between source and build artefacts whilst still operating within the constraints of how GitHub Pages expects you to author content.</p>
-<h2 id="complete">Complete!</h2>
+<h2 id=complete>Complete!</h2>
 <p>All told, this process took up most of a day, with a couple of hours added in to implement the codestyling as I started writing this piece. As a point of comparison, previously I’ve spent a couple of days playing around with beginner React tutorials and not gotten to the point where I had anything I could put online, so I’m definitely appreciative of how much work Hugo has put in to deliver quick results. I’m sure several other frameworks could have facilitated a similar effective start, but just throwing caution to the winds and getting on with it meant I’ve avoided the analysis paralysis that had held me back before.</p>
-<p>I set out wanting to build a platform upon which I can track my projects and write my thoughts, with an emphasis on ease of use. Hugo has delivered magnificently on this, giving me solid foundations to build on and letting me tweak things where I needed to. There’s enough of a community for answers to be googleable, and not so much framework magic going on that I was ever completely stumped on something. Now the really hard part begins: learning how to write!</p><ul class="pa0">
-  
-   <li class="list">
-     <a href="/tags/web" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">web</a>
-   </li>
-  
+<p>I set out wanting to build a platform upon which I can track my projects and write my thoughts, with an emphasis on ease of use. Hugo has delivered magnificently on this, giving me solid foundations to build on and letting me tweak things where I needed to. There’s enough of a community for answers to be googleable, and not so much framework magic going on that I was ever completely stumped on something. Now the really hard part begins: learning how to write!</p><ul class=pa0>
+<li class=list>
+<a href=/tags/web class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">web</a>
+</li>
 </ul>
 <div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
-    <p class="f5 b mb3">Related</p>
-    <ul class="pa0 list">
-	   
-	     <li  class="mb2">
-          <a href="/posts/new-site-who-dis/">New Site Who Dis</a>
-        </li>
-	    
-    </ul>
 </div>
-
+</div>
+<aside class="w-30-l mt6-l">
+<div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+<p class="f5 b mb3">Related</p>
+<ul class="pa0 list">
+<li class=mb2>
+<a href=/posts/new-site-who-dis/>New Site Who Dis</a>
+</li>
+</ul>
+</div>
 </aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-dark-gray bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://jeremystevens.net/" >
-    &copy;  Jez 2021 
-  </a>
-    <div>
-
-
-
-
-<a href="https://twitter.com/NinjaJez" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
-  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
+</article>
+</main>
+<footer class="bg-dark-gray bottom-0 w-100 pa3" role=contentinfo>
+<div class="flex justify-between">
+<a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=https://ninjars.github.io/>
+&copy; Jez 2021
+</a>
+<div>
+<div class=ananke-socials>
+<a href=https://twitter.com/NinjaJez target=_blank class="twitter ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel=noopener aria-label="follow on Twitter——Opens in a new window">
+<span class=icon><svg style="enable-background:new 0 0 67 67" viewBox="0 0 67 67" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167 22.283c-2.619.953-4.274 3.411-4.086 6.101l.063 1.038-1.048-.127c-3.813-.487-7.145-2.139-9.974-4.915l-1.383-1.377-.356 1.017c-.754 2.267-.272 4.661 1.299 6.271.838.89.649 1.017-.796.487-.503-.169-.943-.296-.985-.233-.146.149.356 2.076.754 2.839.545 1.06 1.655 2.097 2.871 2.712l1.027.487-1.215.021c-1.173.0-1.215.021-1.089.467.419 1.377 2.074 2.839 3.918 3.475l1.299.444-1.131.678c-1.676.976-3.646 1.526-5.616 1.568C19.775 43.256 19 43.341 19 43.405c0 .211 2.557 1.397 4.044 1.864 4.463 1.377 9.765.783 13.746-1.568 2.829-1.673 5.657-5 6.978-8.221.713-1.716 1.425-4.851 1.425-6.354.0-.975.063-1.102 1.236-2.267.692-.678 1.341-1.419 1.467-1.631.21-.403.188-.403-.88-.043-1.781.636-2.033.551-1.152-.402.649-.678 1.425-1.907 1.425-2.267.0-.063-.314.042-.671.233-.377.212-1.215.53-1.844.72l-1.131.361-1.027-.7c-.566-.381-1.361-.805-1.781-.932C39.766 21.902 38.131 21.944 37.167 22.283zM33 64C16.432 64 3 50.569 3 34S16.432 4 33 4s30 13.431 30 30S49.568 64 33 64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }}"/></svg>
+</span>
+<span class=new-window><svg height="8" style="enable-background:new 0 0 1000 1000" viewBox="0 0 1e3 1e3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M598 128h298v298h-86V274L392 692l-60-60 418-418H598v-86zM810 810V512h86v298c0 46-40 86-86 86H214c-48 0-86-40-86-86V214c0-46 38-86 86-86h298v86H214v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg>
 </span></a>
-
-
-
-
-<a href="https://www.linkedin.com/in/jezstevens/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
+<a href=https://github.com/Ninjars target=_blank class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel=noopener aria-label="follow on GitHub——Opens in a new window">
+<span class=icon><svg style="enable-background:new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256 32C132.3 32 32 134.8 32 261.7c0 101.5 64.2 187.5 153.2 217.9 11.2 2.1 15.3-5 15.3-11.1.0-5.5-.2-19.9-.3-39.1-62.3 13.9-75.5-30.8-75.5-30.8-10.2-26.5-24.9-33.6-24.9-33.6-20.3-14.3 1.5-14 1.5-14 22.5 1.6 34.3 23.7 34.3 23.7 20 35.1 52.4 25 65.2 19.1 2-14.8 7.8-25 14.2-30.7-49.7-5.8-102-25.5-102-113.5.0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8.0.0 18.8-6.2 61.6 23.5 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 42.8-29.7 61.5-23.5 61.5-23.5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6.0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5.0 30.7-.3 55.5-.3 63 0 6.1 4 13.3 15.4 11C415.9 449.1 480 363.1 480 261.7 480 134.8 379.7 32 256 32z"/></svg>
+</span>
+<span class=new-window><svg height="8" style="enable-background:new 0 0 1000 1000" viewBox="0 0 1e3 1e3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M598 128h298v298h-86V274L392 692l-60-60 418-418H598v-86zM810 810V512h86v298c0 46-40 86-86 86H214c-48 0-86-40-86-86V214c0-46 38-86 86-86h298v86H214v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg>
 </span></a>
-
-
-<a href="https://github.com/Ninjars" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
+<a href=https://www.linkedin.com/in/jezstevens/ target=_blank class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel=noopener aria-label="follow on LinkedIn——Opens in a new window">
+<span class=icon><svg style="enable-background:new 0 0 65 65" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M50.837 48.137V36.425c0-6.275-3.35-9.195-7.816-9.195-3.604.0-5.219 1.983-6.119 3.374V27.71h-6.79c.09 1.917.0 20.427.0 20.427h6.79V36.729c0-.609.044-1.219.224-1.655.49-1.22 1.607-2.483 3.482-2.483 2.458.0 3.44 1.873 3.44 4.618v10.929H50.837zM22.959 24.922c2.367.0 3.842-1.57 3.842-3.531-.044-2.003-1.475-3.528-3.797-3.528s-3.841 1.524-3.841 3.528c0 1.961 1.474 3.531 3.753 3.531H22.959zM34 64C17.432 64 4 50.568 4 34 4 17.431 17.432 4 34 4s30 13.431 30 30c0 16.568-13.432 30-30 30zM26.354 48.137V27.71h-6.789v20.427h6.789z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }}"/></svg>
+</span>
+<span class=new-window><svg height="8" style="enable-background:new 0 0 1000 1000" viewBox="0 0 1e3 1e3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M598 128h298v298h-86V274L392 692l-60-60 418-418H598v-86zM810 810V512h86v298c0 46-40 86-86 86H214c-48 0-86-40-86-86V214c0-46 38-86 86-86h298v86H214v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg>
 </span></a>
-
-
-
-
-
-
-
+</div></div>
 </div>
-  </div>
 </footer>
-
-    
-
-  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
-
-
-  </body>
+</body>
 </html>
