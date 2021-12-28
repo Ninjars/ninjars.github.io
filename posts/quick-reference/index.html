@@ -19,7 +19,7 @@
 <meta itemprop=name content="Quick Reference">
 <meta itemprop=description content="A quick reference doc for reminders on how to update this site."><meta itemprop=datePublished content="2021-12-05T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-12-05T00:00:00+00:00">
-<meta itemprop=wordCount content="290">
+<meta itemprop=wordCount content="314">
 <meta itemprop=keywords content="web,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Quick Reference">
 <meta name=twitter:description content="A quick reference doc for reminders on how to update this site.">
@@ -118,16 +118,17 @@ POSTS
 </ul>
 <h3 id=publishing>Publishing</h3>
 <ul>
-<li>Execute <code>hugo</code> in the project directory to build the website, outputing to the <code>public</code> directory.</li>
-<li>Commit the changes to <code>/public</code> to the <code>public</code> subrepo with a commit message that indicates what the changes were; this publishes the website live!</li>
-<li>Commit the updated head of the subrepo in the main repo; I&rsquo;ve conventionally called these commits simply &ldquo;public release&rdquo;.</li>
+<li>Project uses Github Actions for deployment. See <code>gh-pages.yml</code> for the configuration and see <a href=https://github.com/marketplace/actions/github-pages-action>Github Pages Action</a> and <a href=https://github.com/marketplace/actions/hugo-setup>Hugo Setup</a> for more info on the particulars available</li>
+<li>To publish an update simply push changes made to <code>main</code> branch and wait for Github to build and deploy it.</li>
+<li>Action execution can be verified <a href=https://github.com/Ninjars/ninjars.github.io/actions>on the github actions page</a>.</li>
+<li>The updated website content is pushed to the <code>gh-pages</code> branch by the Github Action and served from there, as per configuration in the Github Pages settings.</li>
 </ul>
 <h3 id=project-layout>Project Layout</h3>
 <ul>
 <li>Pages live inside the folders within <code>/content</code></li>
 <li>css, images and source code for hosted games live inside <code>/static</code></li>
 <li>The code used for the boids simulation lives in <code>/assets</code> - it might make sense to try moving them to static, but there may have been something going on with how Hugo references them.</li>
-<li><code>/layouts</code> contains the custom components I&rsquo;ve defined for showing Unity and Twitter frames, including the Boids animation on the home screen, customising the headers on pages, and similar.</li>
+<li><code>/layouts</code> contains the custom components I&rsquo;ve defined for showing Unity and Twitter frames, including the boids animation on the home screen, customising the headers on pages, and similar.</li>
 <li><code>/themes</code> contains all the components the theme provides. Defining files with the same name and directory structure in the project root will override theme files, as I&rsquo;ve done in <code>/layouts</code></li>
 </ul><ul class=pa0>
 <li class=list>
