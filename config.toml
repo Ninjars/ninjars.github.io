@@ -8,7 +8,7 @@ MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 Paginate = 9 # probably adjust upwards?
-googleAnalytics = "UA-177109114-1"
+googleAnalytics = "G-4GSSPTY8EN"
 enableRobotsTXT = true
 
 [sitemap]
