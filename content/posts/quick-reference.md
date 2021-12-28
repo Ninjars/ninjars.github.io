@@ -15,13 +15,14 @@ I can go for far too long between posts here, and one blocker for coming back is
 - The website will be updated and refreshed automatically as content is modified.
 
 ### Publishing
-- Execute `hugo` in the project directory to build the website, outputing to the `public` directory.
-- Commit the changes to `/public` to the `public` subrepo with a commit message that indicates what the changes were; this publishes the website live!
-- Commit the updated head of the subrepo in the main repo; I've conventionally called these commits simply "public release".
+- Project uses Github Actions for deployment. See `gh-pages.yml` for the configuration and see [Github Pages Action](https://github.com/marketplace/actions/github-pages-action) and [Hugo Setup](https://github.com/marketplace/actions/hugo-setup) for more info on the particulars available
+- To publish an update simply push changes made to `main` branch and wait for Github to build and deploy it.
+- Action execution can be verified [on the github actions page](https://github.com/Ninjars/ninjars.github.io/actions).
+- The updated website content is pushed to the `gh-pages` branch by the Github Action and served from there, as per configuration in the Github Pages settings.
 
 ### Project Layout
 - Pages live inside the folders within `/content`
 - css, images and source code for hosted games live inside `/static`
 - The code used for the boids simulation lives in `/assets` - it might make sense to try moving them to static, but there may have been something going on with how Hugo references them.
-- `/layouts` contains the custom components I've defined for showing Unity and Twitter frames, including the Boids animation on the home screen, customising the headers on pages, and similar.
+- `/layouts` contains the custom components I've defined for showing Unity and Twitter frames, including the boids animation on the home screen, customising the headers on pages, and similar.
 - `/themes` contains all the components the theme provides. Defining files with the same name and directory structure in the project root will override theme files, as I've done in `/layouts`
