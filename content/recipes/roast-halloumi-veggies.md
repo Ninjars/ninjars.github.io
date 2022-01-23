@@ -1,6 +1,6 @@
 ---
 title: "Roast Halloumi and Veggies"
-featured_image: ""
+featured_image: "/images/food/roast-halloumi-veggies.jpg"
 omit_header_text: false
 date: 2021-12-06
 tags: ["food", "roast", "main dish"]
